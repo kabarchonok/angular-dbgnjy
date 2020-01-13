@@ -1,5 +1,5 @@
 :host {
-  padding-top: var(--space-xxl);
+  padding-top: var(--space-xs);
   min-height: calc(100% - 190px);
 }
 
@@ -7,4 +7,5 @@
   max-width: var(--max-content-width);
   margin: auto;
   width: 100%;
+  padding: var(--space-l);
 }
