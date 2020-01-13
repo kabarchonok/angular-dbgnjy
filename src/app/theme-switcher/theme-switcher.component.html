@@ -1,0 +1,14 @@
+<div class="theme-switcher__content">
+  <div class="switch switch-white-black">
+    <input class="switch__input" type="radio" name="theme" id="theme-1" (click)="setTheme('default')" [checked]="(theme | async) === 'default'"/>
+    <label class="switch__label" for="theme-1"></label>
+  </div>
+  <div class="switch switch-blue-green">
+    <input class="switch__input" type="radio" name="theme" id="theme-2" (click)="setTheme('green')" [checked]="(theme | async) === 'green'"/>
+    <label class="switch__label" for="theme-2"></label>
+  </div>
+  <div class="switch switch-yellow-pink">
+    <input class="switch__input" type="radio" name="theme" id="theme-3" (click)="setTheme('pink')" [checked]="(theme | async) === 'pink'"/>
+    <label class="switch__label" for="theme-3"></label>
+  </div>
+</div>

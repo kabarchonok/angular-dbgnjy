@@ -1,0 +1,25 @@
+<div class="search__content">
+  <div class="search__wrapper">
+    <input type="text" placeholder="Поиск по Wikipedia" aria-label="Поиск по Wikipedia" class="search__input"
+           [formControl]="query"
+           [matAutocomplete]="auto"
+           (keyup.enter)="search()"
+    >
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of filteredOptions | async" [value]="option" (click)="search()">
+        {{option}}
+      </mat-option>
+    </mat-autocomplete>
+  </div>
+  <button
+    class="search__btn mat-primary"
+    mat-flat-button
+    (click)="search()"
+    [disabled]="!query.value"
+  >
+    Поиск
+  </button>
+</div>
+
+
+

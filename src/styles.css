@@ -1,1 +1,35 @@
-/* Add application styles & imports to this file! */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+:root {
+    --max-content-width: 1200px;
+    --border-radius: 3px;
+
+    --space-xxxs: 3px;
+    --space-xxs: 6px;
+    --space-xs: 9px;
+    --space-s: 15px;
+    --space-m: 18px;
+    --space-l: 24px;
+    --space-xl: 27px;
+    --space-xxl: 36px;
+    --space-xxxl: 45px;
+    --space-xxxxl: 51px;
+    --space-xxxxxl: 72px;
+
+    --gap: var(--space-xl)
+}

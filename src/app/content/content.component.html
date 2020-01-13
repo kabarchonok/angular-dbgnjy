@@ -1,0 +1,13 @@
+<div *ngIf="(articles | async).length; else contentEmpty" class="content">
+  <article
+    *ngFor="let article of articles | async"
+    [article]="article"
+    app-article-preview
+  >
+  </article>
+</div>
+<ng-template #contentEmpty>
+  <div class="content content-empty">
+    Похоже, ничего не найдено
+  </div>
+</ng-template>

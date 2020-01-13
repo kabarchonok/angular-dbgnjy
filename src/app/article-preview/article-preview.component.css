@@ -1,0 +1,36 @@
+:host {
+  max-width: 600px;
+  margin-bottom: var(--gap);
+}
+
+.article__header {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: var(--space-xxxs);
+}
+
+.article__title {
+  font-weight: normal;
+  font-size: 1.5em;
+  margin-right: var(--space-s);
+  color: var(--link-color);
+}
+
+.article__title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.article__wordtime {
+  font-size: .9em;
+  color: var(--text-color-additional);
+  user-select: none;
+}
+
+.article__content {
+  color: var(--text-color-secondary);
+}
+
+:host >>> .searchmatch {
+  font-weight: 500;
+}

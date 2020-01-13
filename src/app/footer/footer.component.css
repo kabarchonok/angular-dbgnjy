@@ -1,0 +1,11 @@
+:host {
+  background: var(--bg-color-accent);
+  padding: var(--space-l);
+  height: 90px;
+}
+
+.footer__content {
+  max-width: var(--max-content-width);
+  margin: auto;
+  display: flex;
+}

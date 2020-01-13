@@ -1,3 +1,46 @@
-p {
-  font-family: Lato;
+:host,
+:host>div {
+  height: 100%;
+}
+
+:host >>> .theme__default {
+  --bg-color-default: #FFFFFF;
+  --bg-color-accent: #FAFAFA;
+  --border-color: #000000;
+
+  --text-color-primary: #000000;
+  --text-color-secondary: rgba(0, 0, 0, 0.6);
+  --text-color-additional: rgba(0, 0, 0, 0.3);
+  --link-color: #0077ff;
+
+  --button-bg-color-primary: #0077ff;
+  --button-bg-color-secondary: rgba(0,0,0,.12);
+}
+
+:host >>> .theme__green {
+  --bg-color-default: #93e0ad;
+  --bg-color-accent: #79BD8F;
+  --border-color: #000000;
+
+  --text-color-primary: #000000;
+  --text-color-secondary: rgba(0, 0, 0, 0.6);
+  --text-color-additional: rgba(0, 0, 0, 0.3);
+  --link-color: #FF6138;
+
+  --button-bg-color-primary: #FF6138;
+  --button-bg-color-secondary: #b94d30;
+}
+
+:host >>> .theme__pink {
+  --bg-color-default: #a1b5b9;
+  --bg-color-accent: #708084;
+  --border-color: #000000;
+
+  --text-color-primary: #000000;
+  --text-color-secondary: rgba(0, 0, 0, 0.6);
+  --text-color-additional: rgba(0, 0, 0, 0.3);
+  --link-color: #D58070;
+
+  --button-bg-color-primary: #D58070;
+  --button-bg-color-secondary: #a56354;
 }

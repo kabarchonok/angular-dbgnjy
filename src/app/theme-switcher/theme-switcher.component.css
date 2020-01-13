@@ -1,0 +1,42 @@
+:host {
+  margin-left: auto;
+}
+
+.theme-switcher__content {
+  display: flex;
+}
+
+.switch {
+  padding: 3px;
+}
+
+.switch__input {
+  display: none;
+}
+
+.switch__input + .switch__label:before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 3px solid var(--bg-color-accent);
+  cursor: pointer;
+}
+
+
+.switch-white-black .switch__input + .switch__label:before{
+  background: linear-gradient(-45deg, #0077ff 50%, #FAFAFA 50%);
+}
+
+.switch-blue-green .switch__input + .switch__label:before{
+  background: linear-gradient(-45deg, #FF6138 50%, #79BD8F 50%);
+}
+
+.switch-yellow-pink .switch__input + .switch__label:before{
+  background: linear-gradient(-45deg, #D58070 50%, #708084 50%);
+}
+
+.switch__input:checked + .switch__label:before {
+  box-shadow: 0 0 0 3px var(--link-color)
+}
